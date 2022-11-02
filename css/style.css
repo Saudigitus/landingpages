@@ -166,7 +166,7 @@
 
 .image-stack__item--bottom {
     position: absolute;
-    right: 10%;
+    right: 20%;
     top: -50%;
     width: 65%;
     z-index: -1;
@@ -501,4 +501,13 @@
 
 .footer .copyright a:hover {
     color: var(--primary);
+}
+
+.footer-menu {
+    color: gray;
+}
+
+.footer-menu:hover {
+    text-decoration: underline;
+    color: gray !important;
 }
