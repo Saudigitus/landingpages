@@ -504,10 +504,10 @@
 }
 
 .footer-menu {
-    color: gray;
+    color: #8292AF;
 }
 
 .footer-menu:hover {
     text-decoration: underline;
-    color: gray !important;
+    color: #8292AF !important;
 }
