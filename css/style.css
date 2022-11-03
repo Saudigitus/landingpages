@@ -139,7 +139,7 @@
     .navbar .navbar-nav {
         margin-top: 10px;
         border-top: 1px solid rgba(0, 0, 0, .07);
-        background: var(--dark);
+        background: rgb(255, 255, 255);
     }
 
     .navbar .navbar-nav .nav-link {
