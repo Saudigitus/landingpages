@@ -153,6 +153,7 @@ p {
     margin-top: 0;
     margin-bottom: 1rem;
     font-size: 21px !important;
+    color: black;
 }
 
 abbr[title],
@@ -7360,7 +7361,7 @@ fieldset:disabled .btn {
 }
 
 .border-5 {
-    border-width: 5px !important
+    border-width: 10px !important
 }
 
 .w-25 {
