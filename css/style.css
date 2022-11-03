@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #B8F567;
-    --secondary: #B8F567;
+    --primary: #BB262C;
+    --secondary: #C63C41;
     --light: #F8F8F9;
-    --dark: #112E66;
+    --dark: #1D5288;
 }
 
 .back-to-top {
@@ -12,6 +12,17 @@
     right: 30px;
     bottom: 30px;
     z-index: 99;
+    border-radius: 20%;
+}
+
+.back-to-top:hover {
+    border: none !important;
+    background-color: var(--primary) !important;
+}
+
+.back-to-top:active {
+    border: none !important;
+    background-color: var(--primary) !important;
 }
 
 
@@ -101,13 +112,13 @@
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: rgb(184, 245, 103);
+    color: red;
     font-weight: 700;
     font-size: large;
 }
 
 .navbar-scroll {
-    background-color: rgb(17, 46, 102) !important;
+    background-color: rgb(29, 82, 136) !important;
 }
 
 @media (max-width: 991.98px) {
