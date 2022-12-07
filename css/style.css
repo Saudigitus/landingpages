@@ -204,9 +204,12 @@ strong {
 .custom-block-wrap {
   background: var(--white-color);
   border-radius: var(--border-radius-medium);
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
   position: relative;
   overflow: hidden;
   transition: all 0.5s;
+  border: 1px solid rgb(142, 157, 197, 0.1);
 }
 
 .custom-block-wrap:hover {
@@ -215,6 +218,14 @@ strong {
 
 .custom-block-body {
   padding: 30px;
+  padding-bottom: 10px !important;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+  height: 320px;
 }
 
 .custom-block-image {
@@ -312,7 +323,7 @@ strong {
   CUSTOM BUTTON               
 -----------------------------------------*/
 .custom-btn {
-  background: var(--secondary-color);
+  background: #8E9DC5;
   border: 2px solid transparent;
   border-radius: var(--border-radius-large);
   color: var(--white-color);
@@ -329,7 +340,7 @@ strong {
 }
 
 .custom-btn:hover {
-  background: var(--primary-color);
+  background: #1F70C3;
   color: var(--white-color);
 }
 
@@ -1277,16 +1288,15 @@ blockquote::before {
 -----------------------------------------*/
 .site-footer {
   background-color: var(--site-footer-bg-color);
-  padding-top: 70px;
+  padding-top: 50px;
 }
 
 .site-footer-bottom {
   background-color: var(--secondary-color);
   position: relative;
   z-index: 2;
-  margin-top: 70px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .site-footer-bottom a {
