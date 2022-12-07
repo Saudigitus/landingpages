@@ -771,15 +771,6 @@ strong {
 /*---------------------------------------
   DONATE              
 -----------------------------------------*/
-.donate-section {
-  background-image: url('../images/different-people-doing-volunteer-work.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  padding-top: 150px;
-  padding-bottom: 150px;
-}
 
 .donate-form {
   background: var(--white-color);
