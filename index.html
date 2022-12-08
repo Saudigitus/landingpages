@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SIS-MA - Sistema de Informação para Saúde em Monitoria e Avaliação</title>
+    <title>SNIS - Sistema de Informação para Saúde em Monitoria e Avaliação</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
     <!-- CSS FILES -->
@@ -17,6 +17,14 @@
     <link href="css/bootstrap-icons.css" rel="stylesheet">
 
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+            <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
 </head>
 
@@ -40,7 +48,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll fw-bold" href="#section_1">Sobre o SISMA</a>
+                        <a class="nav-link click-scroll fw-bold" href="#section_1">Sobre o SNIS</a>
                     </li>
 
                     <li class="nav-item">
@@ -55,14 +63,14 @@
         <section id="section_1">
             <div class="container-fluid bg-primary hero-header">
                 <div class="container">
-                    <div class="row g-5 px-5" style="height: 700px;">
+                    <div class="row g-5 px-5">
                         <div class="col-lg-6 text-center text-lg-start">
-                            <img class="img-fluid rounded animated zoomIn" src="images/deviceHome.png" alt="">
+                            <img class="img-fluid rounded animated zoomIn" src="images/deviceHome.png" alt="" style="width: 500px;">
                         </div>
                         <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="text-white mb-4 animated slideInDown" style="margin-top: 110px;">SIS-MA</h1>
-                                <h4 class="text-white pb-3 animated slideInDown">Sistema de Informação para Saúde em Monitoria e Avaliação </h4>
-                                <p class="p-lg animated text-white" data-animation="fadeInUp" data-animation-delay="400"> Plataforma DHIS2, de código aberto flexível baseado na Web que coleta, valida, analisa e apresenta os dados estatísticos agregados, adaptado às actividades de gestão integrada de informação em saúde </p>
+                            <h1 class="text-white mb-4 animated slideInDown fw-bold" style="margin-top: 110px;">SNIS</h1>
+                            <h4 class="text-white pb-3 animated slideInDown fw-bold">Sistema Nacional de Informação Sanitária </h4>
+                            <p class="p-lg animated text-white  animated slideInUp hero-text" data-animation="fadeInUp" data-animation-delay="400"> Plataforma DHIS2, de código aberto flexível baseado na Web que coleta, valida, analisa e apresenta os dados estatísticos agregados, adaptado às actividades de gestão integrada de informação em saúde. </p>
                         </div>
                         
                     </div>
@@ -73,33 +81,41 @@
    
         <section class="testimonial-section section-padding section-bg" id="section_2">
             <!-- Advanced Feature Start -->
-            <div class="container-xxl py-6" id="features">
+            <div class="container-xxl" id="features">
                 <div class="container">
                     <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                        <h1 class="mb-3">Sobre o SIS-MA</h1>
-                        <p class="mb-5 text-dark">O SIS-MA é uma plataforma de monitoria e avalição baseada no DHIS2, de código aberto flexível baseado na Web que coleta, valida, analisa e apresenta os dados estatísticos agregados, adaptado às actividades de gestão integrada de informação em saúde. Funciona como um sistema online e também intermitente com as seguintes funcionalidades</p>
+                        <h1 class="mb-3  animated slideInUp">Sobre o SNIS</h1>
+                        <p class="mb-5 text-dark animated slideInUp">O SNIS é uma plataforma de informaçãosanitária baseada no DHIS2, de código aberto flexível baseado na Web que coleta, valida, analisa e apresenta os dados estatísticos agregados, adaptado às actividades de gestão integrada de informação em saúde. Funciona como um sistema online e também intermitente com as funcionalidades apresentadas a seguir.</p>
                     </div>
                     <div class="row g-4">
-                        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="feature-item bg-white rounded text-center p-5">
-                                <img src="images/servidor_central.png" class="mb-4" width="64px" alt="">
-                                <h5 class="mb-3" style="color: #1F70C3;">Servidor Central</h5>
-                                <p class="m-0 text-dark">Os dados são armazenados num servidor centralizado que permite acesso de qualquer dispositivo em qualquer região.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="feature-item bg-white rounded text-center p-5">
-                                <img src="images/dados_agregados.png" class="mb-4" width="64px" alt="">
+                        <div class="col-lg-4 wow fadeInUp animated slideInLeft" data-wow-delay="0.3s">
+                            <a href="https://sisminsaude.gov.cv/prod" >
+                            <div class="advanced-feature-item bg-white rounded text-center p-5">
+                                <img src="images/dados_agregados.png" class="mb-4" width="70px" alt="">
                                 <h5 class="mb-3" style="color: #1F70C3;">Dados Agregados</h5>
                                 <p class="m-0 text-dark">Permite a recolha de dados através de formulários de dados agregados, que resulta da combinação de varios itens como sexo, idade,etc.</p>
                             </div>
+                            </a>
+
+                            
                         </div>
-                        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="feature-item bg-white rounded text-center p-5">
-                                <img src="images/dados_individuais.png" class="mb-4" width="64px" alt="">
+                        <div class="col-lg-4 wow fadeInUp animated zoomIn" data-wow-delay="0.5s">
+                            <a href="https://sisminsaude.gov.cv/prod" >
+                                <div class="advanced-feature-item bg-white rounded text-center p-5">
+                                <img src="images/dados_individuais.png" class="mb-4" width="70px" alt="">
                                 <h5 class="mb-3" style="color: #1F70C3;">Dados Individuais</h5>
                                 <p class="m-0 text-dark">Permite a captura dos vários eventos que ocorrem durante o processo de atendimento ao paciente com base nos processos individuais dos mesmos.</p>
                             </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 wow fadeInUp animated slideInRight" data-wow-delay="0.1s">
+                            <a href="https://cv.sisd.org.mz/" >
+                                <div class="advanced-feature-item bg-white rounded text-center p-5">
+                                <img src="images/servidor_central.png" class="mb-4" width="70px" alt="">
+                                <h5 class="mb-3" style="color: #1F70C3;">Interoperabilidade</h5>
+                                <p class="m-0 text-dark">Os dados são armazenados num servidor centralizado que permite acesso de qualquer dispositivo em qualquer região.</p>
+                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -107,14 +123,75 @@
             <!-- Advanced Feature End -->
         </section>
 
+                <!-- Overview Start -->
+        <section class="mb-5 pb-5" id="section_3">
+            <div class="container" >
+                <div class="row pt-5 mt-5">
+
+                    <div class="col-lg-12 col-12 text-center">
+                        <h1 class="mb-1">Plataformas de Treinamento</h1>
+                        <p class="mb-3 text-dark">Alguns screenshots dos aplicativos</p>
+                    </div>
+                </div>
+                <div class="container subsistemas bg-light" id="overview">
+                    <div class="row g-5 py-5 align-items-center">
+                        <div class="col-lg-6 wow fadeInUpBig text-end" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="images/dadosAgregados.png" style="width: 500px">
+                        </div>
+                        <div class="col-lg-6 wow fadeInUp text-start" data-wow-delay="0.5s">
+                            <div class="d-flex align-items-center mb-4 me-5 pe-5">
+                                <h1 class="mb-0">01</h1>
+                                <span class="mx-2" style="width: 30px; height: 2px; background-color: #1F70C3;"></span>
+                                <h5 class="mb-0">Dados agregados</h5>
+                            </div>
+                            <p class="mb-4 me-5 pe-5"><i class="fa fa-check-circle me-3" style="color: #1F70C3;"></i>Este módulo permite a recolha de dados através de formulários de dados agregados. A desagregação pode ser uma combinação de vários itens ( idade, sexo, etc) dependendo das necessidades de cada formulário.</p>
+                            <a href="https://sisminsaude.gov.cv/tsnis" class="btn btn-primary rounded-pill py-2 px-4" style="width: 150px;">Aceder</a>
+                        </div>
+                    </div>
+                    <div class="row g-5 py-5 align-items-center flex-column-reverse flex-lg-row">
+                        <div class="col-lg-6 wow fadeInUp ps-5" data-wow-delay="0.5s">
+                            <div class="d-flex align-items-center mb-4 ms-5 ps-5">
+                                <h1 class="mb-0">02</h1>
+                                <span class="mx-2" style="width: 30px; height: 2px; background-color: #1F70C3;"></span>
+                                <h5 class="mb-0">Dados Individuais</h5>
+                            </div>
+                            <p class="mb-4 ms-5 ps-5"><i class="fa fa-check-circle me-3" style="color: #1F70C3;"></i>Neste módulo são capturados os vários eventos que ocorrem durante o processo de atendimento ao paciente. A captura é efectuada com base nos processos individuais, com a possibilidade de rastrear o tratamento do paciente.</p>
+                            <div class="ms-5 ps-5">
+                                <a href="https://sisminsaude.gov.cv/tsive" class="btn btn-primary rounded-pill py-2 px-4" style="width: 150px;">Aceder</a>
+                            </div>
+                            
+
+                        </div>
+                        <div class="col-lg-6 wow fadeInUp text-start" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="images/dadosIndividuais.png" style="width: 500px">
+                        </div>
+                    </div>
+<!--                         <div class="row g-5 py-5 align-items-center">
+                        <div class="col-lg-6 wow fadeInUp text-end" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="images/mfl.png" style="width: 500px">
+                        </div>
+                        <div class="col-lg-6 wow fadeInUp text-start" data-wow-delay="0.5s">
+                            <div class="d-flex align-items-center mb-4 me-5 pe-5">
+                                <h1 class="mb-0">03</h1>
+                                <span class="mx-2" style="width: 30px; height: 2px; background-color: #1F70C3;"></span>
+                                <h5 class="mb-0">App Modification</h5>
+                            </div>
+                            <p class="mb-4 me-5 pe-5"><i class="fa fa-check-circle me-3" style="color: #1F70C3;"></i>Este sistema providencia de forma interativa a lista das USs do SNS. Através do mesmo, podem ser efectuados vários relatórios relacionados com a proporpoção/tipos de Unidades, para além do dados de georeferência</p>
+                            <a href="" class="btn btn-primary rounded-pill py-2 px-4" style="width: 150px;">Aceder</a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- Overview End -->
         
-        <section class="section-padding" id="section_3">
+<!--         <section class="section-padding" id="section_3">
             <div class="container">
                 <div class="row">
 
                     <div class="col-lg-12 col-12 text-center">
-                        <h1 class="mb-3">Subsistemas</h1>
-                        <p class="mb-5 text-dark">Confira alguns screenshots dos aplicativos</p>
+                        <h1 class="mb-3">Plataformas de Treinamento</h1>
+                        <p class="mb-5 text-dark fw-bold">Alguns screenshots dos aplicativos</p>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
@@ -178,7 +255,7 @@
                                 <div class="custom-block-body">
                                     <h5 class="mb-3 text-center">Portal de Dados</h5>
 
-                                    <p class=" text-dark" style="font-size: 17px;">O portal Público de dados permite apresentar relatórios dos dados colhidos e processados pelo SISMA sem precisar de efectuar log in. Esta apresentação é efectuada com recurso a gráficos, tabelas e mapas.</p>
+                                    <p class=" text-dark" style="font-size: 17px;">O portal Público de dados permite apresentar relatórios dos dados colhidos e processados pelo SNIS sem precisar de efectuar log in. Esta apresentação é efectuada com recurso a gráficos, tabelas e mapas.</p>
                                 </div>
 
                                 <a href="https://portal.sisd.org.mz/" class="custom-btn btn" target="_blank">Aceder</a>
@@ -188,7 +265,7 @@
 
                 </div>
             </div>
-        </section>
+        </section> -->
 <!--         <section class="section-padding">
             <div class="container">
                 <div class="row">
@@ -242,6 +319,7 @@
         </section> -->
 
     </main>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top fw-bold"><i class="bi bi-arrow-up"></i></a>
 
     <footer class="site-footer">
         <div class="site-footer-bottom">
@@ -255,20 +333,18 @@
                             </small>
               
                             <small class="ps-2">
-                              <a target="_blank" href="https://saudigitus.org/" class="footer-menu">Saudigitus</a>
+                              <a target="_blank" href="https://saudigitus.org/" class="footer-menu">DHIS2</a>
                             </small>
                           </div>
                     </div>
                     <div class="col-lg-6 col-md-7 col-12 text-center">
-                        <p class="copyright-text mb-0">Copyright © 2008 - 2022. Serviços de Inovação Digital<br>Desenvolvido por:
-                            <a href="https://saudigitus.org/">Saudigitus</a>
-                        </p>
+                        <p class="copyright-text mb-0">Powered by 2022 - Gabinete de Tecnologia Comunicação e Saúde</p>
                     </div>
 
 
-                    <div class="col-lg-3 col-md-5 col-12 d-flex justify-content-end align-items-center mx-auto ">
+                    <div class="col-lg-3 col-md-5 col-12 d-flex justify-content-end align-items-center mx-auto">
                         <img src="images/logo.png" class="logo img-fluid me-5" alt="Kind Heart Charity" style="width: 145px;">
-                        <img src="images/saudigitus.png" class="logo img-fluid" alt="Kind Heart Charity" style="width: 100px; height: 70px;">   
+                        <img src="images/dhis2.png" class="logo img-fluid me-5" alt="Kind Heart Charity" style="width: 70px; height: 70px;">   
                     </div>
 
                 </div>
@@ -283,6 +359,8 @@
     <script src="js/click-scroll.js"></script>
     <script src="js/counter.js"></script>
     <script src="js/custom.js"></script>
+
+
 
 </body>
 
