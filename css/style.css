@@ -1669,7 +1669,7 @@ blockquote::before {
 }
 
 .hero-text{
-  background-color: rgb(8, 50, 148, 0.2);
+  background-color: rgb(111, 190, 150, 0.7);
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
   padding: 10px;
