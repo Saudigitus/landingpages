@@ -408,66 +408,47 @@ strong {
   padding-bottom: 15px;
 }
 
-.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.active {
+  background: transparent;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
 .navbar-nav .nav-link:hover {
   background: transparent;
   color: var(--primary-color);
 }
 
-.dropdown-menu {
-  background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
-  border: 0;
-  max-width: 50px;
-  padding: 0;
-  margin-top: 20px;
+.navbar .dropdown-toggle::after {
+  border: none;
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  vertical-align: middle;
+  margin-left: 8px;
 }
 
-.dropdown-item {
-  display: inline-block;
-  color: var(--p-bg-color);
-  font-size: var(--menu-font-size);
-  font-weight: var(--font-weight-medium);
-  position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.dropdown-menu li:last-child .dropdown-item {
-  padding-top: 0;
-}
-
-.dropdown-item.active,
-.dropdown-item:active,
-.dropdown-item:focus,
-.dropdown-item:hover {
-  background: transparent;
-  color: var(--primary-color);
-}
-
-.dropdown-toggle::after {
-  content: "\f282";
-  display: inline-block;
-  font-family: bootstrap-icons !important;
-  font-size: var(--copyright-font-size);
-  font-style: normal;
-  font-weight: normal !important;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  vertical-align: -.125em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  left: 2px;
-  border: 0;
-}
-
-@media screen and (min-width: 992px) {
-  .dropdown:hover .dropdown-menu {
+@media (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
     display: block;
+    border: none;
     margin-top: 0;
+    top: 150%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
   }
+
+  .navbar .nav-item:hover .dropdown-menu {
+    top: 100%;
+    visibility: visible;
+    transition: .5s;
+    opacity: 1;
+  }
+}
+
+.dropdown-item:hover {
+  color: #1F70C3 !important;
 }
 
 .navbar-toggler {
@@ -1668,7 +1649,7 @@ blockquote::before {
   height: 500px;
 }
 
-.hero-text{
+.hero-text {
   background-color: rgb(111, 190, 150, 0.7);
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
