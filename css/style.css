@@ -1665,9 +1665,19 @@ blockquote::before {
 /*** Feature ***/
 .feature-item,
 .advanced-feature-item {
-  height: 100%;
   transition: .5s;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
 }
+.advanced-feature-item .margem {
+  flex: 1 1 auto;
+  padding-bottom: 33px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
 
 .feature-item:hover {
   margin-top: -15px;
@@ -1687,6 +1697,12 @@ blockquote::before {
 
 .advanced-feature-item:hover * {
   color: #FFFFFF !important;
+}
+.advanced-feature-item:hover a {
+  color: #1F70C3 !important;
+  background: #FFFFFF !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  border: none !important;
 }
 
 .back-to-top {
