@@ -49,7 +49,7 @@ https://templatemo.com/tm-581-kind-heart-charity
 -----------------------------------------*/
 :root {
   --white-color: #ffffff;
-  --primary-color: #1F70C3;
+  --primary-color: #00B553;
   --secondary-color: #5a6f80;
   --section-bg-color: #f0f8ff;
   --site-footer-bg-color: #44525d;
@@ -180,7 +180,7 @@ strong {
 }
 
 .section-bg {
-  background-color: var(--section-bg-color);
+  background-color: #F8FFDD;
 }
 
 .section-overlay {
@@ -438,6 +438,7 @@ strong {
     opacity: 0;
     visibility: hidden;
     transition: .5s;
+    width: auto;
   }
 
   .navbar .nav-item:hover .dropdown-menu {
@@ -446,10 +447,17 @@ strong {
     transition: .5s;
     opacity: 1;
   }
+    .navbar .nav-item:active .dropdown-menu {
+    top: 100%;
+    visibility: visible;
+    transition: .5s;
+    opacity: 1;
+    width: auto !important;
+  }
 }
 
 .dropdown-item:hover {
-  color: #1F70C3 !important;
+  color: #00B553 !important;
 }
 
 .navbar-toggler {
@@ -930,7 +938,7 @@ blockquote::before {
 
 .testimonial-section::before {
   content: "";
-  background-color: var(--primary-color);
+  background-color: #00A7ED;
   border-radius: 50%;
   position: absolute;
   top: -100px;
@@ -942,7 +950,7 @@ blockquote::before {
 
 .testimonial-section::after {
   content: "";
-  background: #6FBE96;
+  background: #00B553;
   border-radius: 50%;
   position: absolute;
   bottom: -170px;
@@ -1338,7 +1346,7 @@ blockquote::before {
 }
 
 .social-icon-link {
-  background: var(--site-footer-bg-color);
+  background: #44525D;
   border-radius: var(--border-radius-large);
   color: var(--white-color);
   font-size: var(--copyright-font-size);
@@ -1683,7 +1691,7 @@ blockquote::before {
 }
 
 .advanced-feature-item:hover {
-  background: #1F70C3 !important;
+  background: #00A7ED !important;
 }
 
 .advanced-feature-item:hover * {
@@ -1706,9 +1714,9 @@ blockquote::before {
 }
 
 .subsistemas {
-  border-top: 5px solid #276696;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-bottom: 5px solid #276696;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   background-color: #EDF5FF !important;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
@@ -1735,7 +1743,7 @@ blockquote::before {
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-  color: var(--primary);
+  color: #00B553;
 }
 
 .navbar .dropdown-toggle::after {
