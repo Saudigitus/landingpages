@@ -402,6 +402,10 @@ h2 span:before {
     padding-bottom: 120px
 }
 
+.pb-50 {
+    padding-bottom: 50px
+}
+
 .pt-0 {
     padding-top: 0
 }
