@@ -4222,12 +4222,12 @@ body.rtl-mode .price-wrapper {
 
 .footer-logo img {
     width: 200px;
-    margin-bottom: 30px
+    margin-bottom: 10px
 }
 
 .copyright {
-    padding: 30px 0;
-    border-top: 1px solid rgba(255, 255, 255, .1)
+    padding: 10px 0;
+/*     border-top: 1px solid rgba(255, 255, 255, .1) */
 }
 
 .copyright .footer-menu {
@@ -4296,7 +4296,7 @@ body.rtl-mode .price-wrapper {
 .footer-list {
     display: flex;
     flex-direction: column;
-    gap: .9rem
+/*     gap: .9rem */
 }
 
 .footer-list li a {
