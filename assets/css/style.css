@@ -1404,7 +1404,7 @@ button.navbar-toggler:focus {
     font-size: 80px;
     font-weight: 700;
     margin: 20px 0;
-    text-transform: capitalize
+    /* text-transform: capitalize */
 }
 
 .hero-single .hero-content .hero-title span {
