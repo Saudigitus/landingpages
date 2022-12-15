@@ -1497,7 +1497,7 @@ button.navbar-toggler:focus {
 
 @media all and (max-width:991px) {
     .hero-single .hero-content .hero-title {
-        font-size: 35px
+        font-size: 15px
     }
 
     .hero-single .hero-content .hero-btn {
