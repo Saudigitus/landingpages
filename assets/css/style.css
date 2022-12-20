@@ -1401,7 +1401,7 @@ button.navbar-toggler:focus {
 
 .hero-single .hero-content .hero-title {
     color: #fff;
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 700;
     margin: 20px 0;
     /* text-transform: capitalize */
@@ -4512,4 +4512,9 @@ body.rtl-mode .price-wrapper {
     .home-3 .hero-img {
         display: none
     }
+}
+
+.about-text{
+    text-align: justify;
+  text-justify: inter-word;
 }
