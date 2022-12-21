@@ -1369,8 +1369,9 @@ button.navbar-toggler:focus {
 }
 
 .hero-single {
-    padding-top: 160px;
-    padding-bottom: 160px;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    padding-left: 100px;
     background-position: center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
@@ -1401,7 +1402,7 @@ button.navbar-toggler:focus {
 
 .hero-single .hero-content .hero-title {
     color: #fff;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 700;
     margin: 20px 0;
     /* text-transform: capitalize */
