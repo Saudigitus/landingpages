@@ -864,7 +864,7 @@ h2 span:before {
 @media all and (min-width:992px) {
     .navbar .nav-item .nav-link {
         margin-right: 23px;
-        padding: 30px 20px;
+        padding: 0px 0px;
         font-size: 17px;
         font-weight: 600;
         color: #162542;
