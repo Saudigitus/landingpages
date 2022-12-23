@@ -1389,7 +1389,7 @@ button.navbar-toggler:focus {
     height: 100%;
     left: -.5px;
     top: 0;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .5);
     z-index: -1
 }
 
