@@ -1,383 +1,405 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SISMA - Ministério da Saúde</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <!-- Favicon -->
+    <link type="image/x-icon" href="img/favicon.ico" rel="icon">
 
-    <title>SNIS - Sistema de Informação para Saúde em Monitoria e Avaliação</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-
-    <!-- CSS FILES -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="css/bootstrap-icons.css" rel="stylesheet">
-
-    <link href="css/style.css" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-            <!-- Libraries Stylesheet -->
+    <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
 
-    <nav class="navbar navbar-expand-lg bg-light shadow-lg py-1">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" class="logo img-fluid" alt="Kind Heart Charity" style="width: 150px;">
-            </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#top">Início</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <span class="nav-link dropdown-toggle"
-                            id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Acesso às plataformas</span>
-
-                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                            <li><a class="dropdown-item" target="_blank" href="https://sisminsaude.gov.cv/snis">Dados Agregados</a></li>
-                            <li><a class="dropdown-item" target="_blank" href="https://sisminsaude.gov.cv/sive/">Dados Individuais</a></li>
-                            <li><a class="dropdown-item" target="_blank" href="https://sisminsaude.gov.cv/intero">Serviços de Interoperabilidade</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#section_3">Subsistemas</a>
-                    </li>
-                </ul>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img class="img-fluid me-2" src="img/emblema.png" alt="" style="width: 45px;">
+            <h5 class="m-0 text-dark mt-1">Ministério da Saúde</h5>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-4 py-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Início</a>
+                <a href="index.html" class="nav-item nav-link">Subsistemas</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Plataformas</a>
+                    <div class="dropdown-menu shadow-sm m-0">
+                        <a href="index.html" class="dropdown-item">Plataforma 1</a>
+                        <a href="index.html" class="dropdown-item">Plataforma 2</a>
+                        <a href="index.html" class="dropdown-item">Plataforma 3</a>
+                    </div>
+                </div>
             </div>
+
         </div>
     </nav>
+    <!-- Navbar End -->
 
-    <main>
-        <section id="section_1">
-            <div class="container-fluid bg-primary hero-header">
-                <div class="container">
-                    <div class="row g-5 px-5">
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <img class="img-fluid rounded animated zoomIn" src="images/deviceHome.png" alt="" style="width: 500px;">
-                        </div>
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="text-white mb-4 animated slideInDown fw-bold" style="margin-top: 110px;">SNIS</h1>
-                            <h4 class="text-white pb-3 animated slideInDown fw-bold">Sistema Nacional de Informação Sanitária </h4>
-                            <p class="p-lg animated text-white  animated slideInUp hero-text" data-animation="fadeInUp" data-animation-delay="400"> Desenvolvido com base na plataforma DHIS2, de código aberto flexível baseado na Web que coleta, valida, analisa e apresenta os dados estatísticos agregados, adaptado às actividades de gestão integrada de informação em saúde. </p>
-                        </div>
-                        
+
+    <!-- Header Start -->
+    <div class="container-fluid hero-header bg-light pt-5 mb-5">
+        <div class="container">
+            <div class="row g-5 mb-5">
+                <div class="col-lg-7" style="margin-top: 170px;">
+                    <div>
+                      <h1 class="display-4 mb-3 animated slideInDown text-primary">SIS-MA</h1>
+                    <h4 class="mb-3 animated slideInDown text-primary">Sistema de Informação para Saúde em Monitoria e Avaliação</h4>
+                    <p class="animated slideInDown text-dark text-justified" style="font-size: 21px; max-width: 670px;">Desenvolvido com base na plataforma DHIS2, de código aberto flexível baseado na Web que coleta, valida, analisa e apresenta os dados estatísticos agregados, adaptado às actividades de gestão integrada de informação em saúde.</p>
                     </div>
+                    
                 </div>
-            </div>
-        </section>
-        
-   
-        <section class="testimonial-section section-padding section-bg">
-            <!-- Advanced Feature Start -->
-            <div class="container-xxl" id="features">
-                <div class="container">
-                    <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                        <h1 class="mb-3  animated slideInUp">Acesso às plataformas</h1>
-                        <p class="mb-5 text-dark animated slideInUp">O SNIS é um sistema de gestão de informação sanitária baseado no DHIS2, de código aberto flexível baseado na Web que coleta, valida, analisa e apresenta os dados estatísticos agregados, adaptado às actividades de gestão integrada de informação em saúde. Funciona como um sistema online e também intermitente com as funcionalidades apresentadas a seguir.</p>
-                    </div>
-                    <div class="row g-4">
-                        <div class="col-lg-4 wow fadeInUp animated slideInLeft" data-wow-delay="0.3s">
-                            <div class="advanced-feature-item bg-white rounded text-center p-5 pb-0">
-                                <div class="text-center">
-                                    <img src="images/dados_agregados.png" class="mb-4" width="70px" alt="">
-                                </div>
-                                <h5 class="mb-3" style="color: #1F70C3;">Dados Agregados</h5>
-                                <p class="m-0 text-dark">Subsistema para recolha e análise de dados, através de formulários de dados agregados, que resulta da combinação de varios itens como sexo, idade,etc.</p>
-                                <div class="margem">
-                                    <a href="https://sisminsaude.gov.cv/snis" target="_blank" class="btn btn-primary rounded-pill mt-4 py-2 px-4" style="width: 150px;">Aceder</a>
-                                </div>
-                            </div>  
-                        </div>
-                        <div class="col-lg-4 wow fadeInUp animated zoomIn" data-wow-delay="0.5s">
-                            <div class="advanced-feature-item bg-white rounded text-center p-5 pb-0">
-                                <div class="text-center">
-                                    <img src="images/dados_individuais.png" class="mb-4" width="70px" alt="">
-                                </div>
-                                <h5 class="mb-3" style="color: #1F70C3;">Dados Individuais</h5>
-                                <p class="m-0 text-dark">Subsistema de gestão e captura de eventos que ocorrem na comunidade e o registo feito durante o processo de atendimento ao paciente, com base nos processos individuais dos mesmos.</p>                  
-                                <div class="margem">
-                                    <a href="https://sisminsaude.gov.cv/sive/" target="_blank" class="btn btn-primary rounded-pill mt-4 py-2 px-4" style="width: 150px;">Aceder</a>
-                                </div>
-                            </div>    
-                        </div>
-                        <div class="col-lg-4 wow fadeInUp animated slideInRight" data-wow-delay="0.1s">
-                            <div class="advanced-feature-item bg-white rounded text-center p-5 pb-0">
-                                <div class="text-center">
-                                    <img src="images/servidor_central.png" class="mb-4" width="70px" alt="">
-                                </div>
-                                <h5 class="mb-3" style="color: #1F70C3;">Plataforma de Serviços de Interoperabilidade</h5>
-                                <p class="m-0 text-dark">Plataforma de serviços web que permite a ligação directa e segura de comunicação de dados e informações, entre sistemas informáticos de gestão de dados do Ministério da Saúde, de forma transparente e simplificada.</p>
-                                <div class="margem">
-                                    <a href="https://sisminsaude.gov.cv/intero" target="_blank" class="btn btn-primary rounded-pill mt-4 py-2 px-4" style="width: 150px;">Aceder</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Advanced Feature End -->
-        </section>
-        <div id="section_3"></div>
-
-                <!-- Overview Start -->
-        <section class="mb-5 pb-5">
-            <div class="container" >
-                <div class="row pt-5 mt-5">
-
-                    <div class="col-lg-12 col-12 text-center">
-                        <h1 class="mb-4">Plataformas de Treinamento</h1>
-                        <!-- <p class="mb-3 text-dark">Alguns screenshots dos aplicativos</p> -->
-                    </div>
-                </div>
-                <div class="container subsistemas bg-light" id="overview">
-                    <div class="row g-5 py-5 align-items-center">
-                        <div class="col-lg-6 wow fadeInUpBig text-end" data-wow-delay="0.1s">
-                            <img class="img-fluid rounded" src="images/1.jpeg" style="width: 500px">
-                        </div>
-                        <div class="col-lg-6 wow fadeInUp text-start" data-wow-delay="0.5s">
-                            <div class="d-flex align-items-center mb-4 me-5 pe-5">
-                               <!--  <h1 class="mb-0">01</h1> -->
-                                <span class="mx-2" style="width: 30px; height: 2px; background-color: #1F70C3;"></span>
-                                <h5 class="mb-0">Dados agregados</h5>
-                            </div>
-                            <p class="mb-4 me-5 pe-5 text-dark"><i class="fa fa-check-circle me-3" style="color: #1F70C3;"></i>Este módulo permite a recolha de dados através de formulários de dados agregados. A desagregação pode ser uma combinação de vários itens ( idade, sexo, etc) dependendo das necessidades de cada formulário.</p>
-                            <a href="" class="btn btn-primary rounded-pill py-2 px-4" style="width: 150px;">Treinamento</a>
-                        </div>
-                    </div>
-                    <div class="row g-5 py-5 align-items-center flex-column-reverse flex-lg-row">
-                        <div class="col-lg-6 wow fadeInUp ps-5" data-wow-delay="0.5s">
-                            <div class="d-flex align-items-center mb-4 ms-5 ps-5">
-                               <!--  <h1 class="mb-0">02</h1> -->
-                                <span class="mx-2" style="width: 30px; height: 2px; background-color: #1F70C3;"></span>
-                                <h5 class="mb-0">Dados Individuais</h5>
-                            </div>
-                            <p class="mb-4 ms-5 ps-5 text-dark"><i class="fa fa-check-circle me-3" style="color: #1F70C3;"></i>Neste módulo são capturados os vários eventos que ocorrem durante o processo de atendimento ao paciente. A captura é efectuada com base nos processos individuais, com a possibilidade de rastrear o tratamento do paciente.</p>
-                            <div class="ms-5 ps-5">
-                                <a href="" class="btn btn-primary rounded-pill py-2 px-4" style="width: 150px;">Treinamento</a>
-                            </div>
-                            
-
-                        </div>
-                        <div class="col-lg-6 wow fadeInUp text-start" data-wow-delay="0.1s">
-                            <img class="img-fluid rounded" src="images/8.jpeg" style="width: 500px">
-                        </div>
-                    </div>
-<!--                         <div class="row g-5 py-5 align-items-center">
-                        <div class="col-lg-6 wow fadeInUp text-end" data-wow-delay="0.1s">
-                            <img class="img-fluid rounded" src="images/mfl.png" style="width: 500px">
-                        </div>
-                        <div class="col-lg-6 wow fadeInUp text-start" data-wow-delay="0.5s">
-                            <div class="d-flex align-items-center mb-4 me-5 pe-5">
-                                <h1 class="mb-0">03</h1>
-                                <span class="mx-2" style="width: 30px; height: 2px; background-color: #1F70C3;"></span>
-                                <h5 class="mb-0">App Modification</h5>
-                            </div>
-                            <p class="mb-4 me-5 pe-5"><i class="fa fa-check-circle me-3" style="color: #1F70C3;"></i>Este sistema providencia de forma interativa a lista das USs do SNS. Através do mesmo, podem ser efectuados vários relatórios relacionados com a proporpoção/tipos de Unidades, para além do dados de georeferência</p>
-                            <a href="" class="btn btn-primary rounded-pill py-2 px-4" style="width: 150px;">Aceder</a>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-        </section>
-        <!-- Overview End -->
-        
-<!--         <section class="section-padding" id="section_3">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-12 col-12 text-center">
-                        <h1 class="mb-3">Plataformas de Treinamento</h1>
-                        <p class="mb-5 text-dark fw-bold">Alguns screenshots dos aplicativos</p>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                        <div class="custom-block-wrap">
-                            <img src="images/dadosAgregados.png"
-                                class="custom-block-image img-fluid" alt="">
-
-                            <div class="custom-block border-top">
-                                <div class="custom-block-body">
-                                    <h5 class="mb-3 text-center">Dados Agregados</h5>
-
-                                    <p class=" text-dark" style="font-size: 17px;">Este módulo permite a recolha de dados através de formulários de dados agregados. A desagregação pode ser uma combinação de vários itens ( idade, sexo, etc) dependendo das necessidades de cada formulário.</p>
-                                </div>
-
-                                <a href="https://sisminsaude.gov.cv/snis/" class="custom-btn btn" target="_blank">Aceder</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                        <div class="custom-block-wrap">
-                            <img src="images/dadosIndividuais.png"
-                                class="custom-block-image img-fluid" alt="">
-
-                            <div class="custom-block border-top">
-                                <div class="custom-block-body">
-                                    <h5 class="mb-3 text-center">Dados Individuais</h5>
-
-                                    <p class=" text-dark" style="font-size: 17px;">Neste módulo são capturados os vários eventos que ocorrem durante o processo de atendimento ao paciente. A captura é efectuada com base nos processos individuais, com a possibilidade de rastrear o tratamento do paciente.</p>
-
-                                </div>
-
-                                <a href="https://sisminsaude.gov.cv/sive" class="custom-btn btn" target="_blank">Aceder</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="custom-block-wrap">
-                            <img src="images/mfl.png"
-                                class="custom-block-image img-fluid" alt="">
-
-                            <div class="custom-block border-top">
-                                <div class="custom-block-body">
-                                    <h5 class="mb-3 text-center">Lista de Un. Sanitárias</h5>
-
-                                    <p class=" text-dark" style="font-size: 17px;">Este sistema providencia de forma interativa a lista das USs do SNS. Através do mesmo, podem ser efectuados vários relatórios relacionados com a proporpoção/tipos de Unidades, para além do dados de georeferência</p>
-                                </div>
-
-                                <a href="https://mflapp.saudigitus.org/page" class="custom-btn btn" target="_blank">Aceder</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="custom-block-wrap">
-                            <img src="images/portal.png"
-                                class="custom-block-image img-fluid" alt="">
-
-                            <div class="custom-block border-top">
-                                <div class="custom-block-body">
-                                    <h5 class="mb-3 text-center">Portal de Dados</h5>
-
-                                    <p class=" text-dark" style="font-size: 17px;">O portal Público de dados permite apresentar relatórios dos dados colhidos e processados pelo SNIS sem precisar de efectuar log in. Esta apresentação é efectuada com recurso a gráficos, tabelas e mapas.</p>
-                                </div>
-
-                                <a href="https://portal.sisd.org.mz/" class="custom-btn btn" target="_blank">Aceder</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section> -->
-<!--         <section class="section-padding">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-10 col-12 text-center mx-auto">
-                        <h2 class="mb-5">Welcome to Kind Heart Charity</h2>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                        <div class="featured-block d-flex justify-content-center align-items-center">
-                            <a href="donate.html" class="d-block">
-                                <img src="images/icons/hands.png" class="featured-block-image img-fluid" alt="">
-
-                                <p class="featured-block-text">Become a <strong>volunteer</strong></p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
-                        <div class="featured-block d-flex justify-content-center align-items-center">
-                            <a href="donate.html" class="d-block">
-                                <img src="images/icons/heart.png" class="featured-block-image img-fluid" alt="">
-
-                                <p class="featured-block-text"><strong>Caring</strong> Earth</p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
-                        <div class="featured-block d-flex justify-content-center align-items-center">
-                            <a href="donate.html" class="d-block">
-                                <img src="images/icons/receive.png" class="featured-block-image img-fluid" alt="">
-
-                                <p class="featured-block-text">Make a <strong>Donation</strong></p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                        <div class="featured-block d-flex justify-content-center align-items-center">
-                            <a href="donate.html" class="d-block">
-                                <img src="images/icons/scholarship.png" class="featured-block-image img-fluid" alt="">
-
-                                <p class="featured-block-text"><strong>Scholarship</strong> Program</p>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section> -->
-
-    </main>
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top fw-bold"><i class="bi bi-arrow-up"></i></a>
-
-    <footer class="site-footer">
-        <div class="site-footer-bottom">
-            <div class="container-fluid px-5">
-                <div class="row d-flex align-items-center">
-                    <div class="col-lg-3 col-md-5 col-12 mx-auto">
-                        <h6 class="text-white mb-1">Links rápidos</h6>
-                        <div class="">
-                            <small class="pe-2 border-end">
-                                <a target="_blank" href="https://minsaude.gov.cv/" class="footer-menu">Ministério da Saúde</a>
-                            </small>
-              
-                            <small class="ps-2">
-                              <a target="_blank" href="https://saudigitus.org/" class="footer-menu">DHIS2</a>
-                            </small>
-                          </div>
-                    </div>
-                    <div class="col-lg-6 col-md-7 col-12 text-center">
-                        <p class="copyright-text mb-0">Powered by 2022 - Gabinete de Tecnologia, Comunicação e Informação em Saúde</p>
-                    </div>
-
-
-                    <div class="col-lg-3 col-md-5 col-12 d-flex justify-content-end align-items-center mx-auto">
-                        <img src="images/logo.png" class="logo img-fluid me-5" alt="Kind Heart Charity" style="width: 145px;">
-                        <img src="images/dhis2.png" class="logo img-fluid me-5" alt="Kind Heart Charity" style="width: 70px; height: 70px;">   
-                    </div>
-
+                <div class="col-lg-5 animated fadeIn d-flex justify-content-center">
+                    <img class="img-fluid animated pulse infinite" style="animation-duration: 3s; width: 550px; margin-left: -50px;" src="img/deviceHome.png" alt="">
                 </div>
             </div>
         </div>
-    </footer>
-
-    <!-- JAVASCRIPT FILES -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/click-scroll.js"></script>
-    <script src="js/counter.js"></script>
-    <script src="js/custom.js"></script>
+    </div>
+    <!-- Header End -->
 
 
+    <!-- About Start -->
+    <div class="container-fluid pt-3 border-bottom">
+      <div class="container">
+         <div class="row g-5 align-items-center mt-2">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid" src="img/mobile_tablet.png" alt="">
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <h1 class="display-6">Sobre o SIS-MA</h1>
+                        <p class="text-primary fs-5 mb-4">
+                            Sistema de Informação para Saúde em Monitoria e Avaliação
+                        </p>
+                        <p class="mb-4 text-dark text-justified" style="max-width: 610px; font-size: 17px;"> O SIS-MA é um sistema de gestão de informação sanitária baseado no DHIS2, 
+                            de código aberto flexível baseado na Web que coleta, valida, analisa e apresenta os dados 
+                            estatísticos agregados, adaptado às actividades de gestão integrada de informação em saúde. 
+                            Funciona como um sistema online e também intermitente com as funcionalidades apresentadas a seguir.</p>
+<!--                         <div class="d-flex align-items-center mb-2">
+                            <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-3 fw-bold"></i>
+                            <span>Tempor erat elitr rebum at clita</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-3 fw-bold"></i>
+                            <span>Tempor erat elitr rebum at clita</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-3 fw-bold"></i>
+                            <span>Tempor erat elitr rebum at clita</span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+      </div>
+           
 
+    </div>
+    <!-- About End -->
+
+
+    <!-- Features Start 
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-6">Acesso às plataformas</h1>
+                <p class="text-primary fs-5 mb-5">The Best In The crypto Industry</p>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-start">
+                        <img class="img-fluid flex-shrink-0" src="img/icon-7.png" alt="">
+                        <div class="ps-4">
+                            <h5 class="mb-3">Easy To Start</h5>
+                            <span>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
+                                clita duo justo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="d-flex align-items-start">
+                        <img class="img-fluid flex-shrink-0" src="img/icon-6.png" alt="">
+                        <div class="ps-4">
+                            <h5 class="mb-3">Safe & Secure</h5>
+                            <span>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
+                                clita duo justo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="d-flex align-items-start">
+                        <img class="img-fluid flex-shrink-0" src="img/icon-5.png" alt="">
+                        <div class="ps-4">
+                            <h5 class="mb-3">Affordable Plans</h5>
+                            <span>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
+                                clita duo justo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-start">
+                        <img class="img-fluid flex-shrink-0" src="img/icon-4.png" alt="">
+                        <div class="ps-4">
+                            <h5 class="mb-3">Secure Storage</h5>
+                            <span>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
+                                clita duo justo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="d-flex align-items-start">
+                        <img class="img-fluid flex-shrink-0" src="img/icon-3.png" alt="">
+                        <div class="ps-4">
+                            <h5 class="mb-3">Protected By Insurance</h5>
+                            <span>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
+                                clita duo justo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="d-flex align-items-start">
+                        <img class="img-fluid flex-shrink-0" src="img/icon-8.png" alt="">
+                        <div class="ps-4">
+                            <h5 class="mb-3">24/7 Support</h5>
+                            <span>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
+                                clita duo justo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    Features End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl bg-light py-5">
+        <div class="container py-4">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-6">Acesso às plataformas</h1>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-white p-5">
+                        <img class="img-fluid mb-4" src="img/icon-7.png" alt="">
+                        <h5 class="mb-3">Dados agregados</h5>
+                        <p>Subsistema para recolha e análise de dados, através de formulários de dados agregados, 
+                            que resulta da combinação de varios itens como sexo, idade,etc.</p>
+                        <a href="">Aceder <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-white p-5">
+                        <img class="img-fluid mb-4" src="img/icon-3.png" alt="">
+                        <h5 class="mb-3">Dados individuais</h5>
+                        <p>Subsistema de gestão e captura de eventos que ocorrem na comunidade e o registo feito durante o processo 
+                            de atendimento ao paciente, com base nos processos individuais dos mesmos.</p>
+                        <a href="">Aceder <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-white p-5">
+                        <img class="img-fluid mb-4" src="img/icon-9.png" alt="">
+                        <h5 class="mb-3">Plataforma de interoperabilidade</h5>
+                        <p>Plataforma de serviços web que permite a ligação directa e segura de comunicação de dados e informações, 
+                            entre sistemas informáticos de gestão de dados do Ministério da Saúde, de forma transparente e simplificada.</p>
+                        <a href="">Aceder <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-white p-5">
+                        <img class="img-fluid mb-4" src="img/icon-7.png" alt="">
+                        <h5 class="mb-3">Dados agregados</h5>
+                        <p>Subsistema para recolha e análise de dados, através de formulários de dados agregados, 
+                            que resulta da combinação de varios itens como sexo, idade,etc.</p>
+                        <a href="">Aceder <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-white p-5">
+                        <img class="img-fluid mb-4" src="img/icon-3.png" alt="">
+                        <h5 class="mb-3">Dados individuais</h5>
+                        <p>Subsistema de gestão e captura de eventos que ocorrem na comunidade e o registo feito durante o processo 
+                            de atendimento ao paciente, com base nos processos individuais dos mesmos.</p>
+                        <a href="">Aceder <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-white p-5">
+                        <img class="img-fluid mb-4" src="img/icon-9.png" alt="">
+                        <h5 class="mb-3">Plataforma de interoperabilidade</h5>
+                        <p>Plataforma de serviços web que permite a ligação directa e segura de comunicação de dados e informações, 
+                            entre sistemas informáticos de gestão de dados do Ministério da Saúde, de forma transparente e simplificada.</p>
+                        <a href="">Aceder <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Roadmap Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-6">Roadmap</h1>
+                <p class="text-primary fs-5 mb-5">We Translate Your Dream Into Reality</p>
+            </div>
+            <div class="owl-carousel roadmap-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="roadmap-item">
+                    <div class="roadmap-point"><span></span></div>
+                    <h5>January 2045</h5>
+                    <span>Diam dolor ipsum sit amet erat ipsum lorem sit</span>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-point"><span></span></div>
+                    <h5>March 2045</h5>
+                    <span>Diam dolor ipsum sit amet erat ipsum lorem sit</span>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-point"><span></span></div>
+                    <h5>May 2045</h5>
+                    <span>Diam dolor ipsum sit amet erat ipsum lorem sit</span>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-point"><span></span></div>
+                    <h5>July 2045</h5>
+                    <span>Diam dolor ipsum sit amet erat ipsum lorem sit</span>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-point"><span></span></div>
+                    <h5>September 2045</h5>
+                    <span>Diam dolor ipsum sit amet erat ipsum lorem sit</span>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-point"><span></span></div>
+                    <h5>November 2045</h5>
+                    <span>Diam dolor ipsum sit amet erat ipsum lorem sit</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Roadmap End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <h1 class="text-primary mb-4"><img class="img-fluid me-2" src="img/icon-1.png" alt=""
+                            style="width: 45px;">CryptoCoin</h1>
+                    <span>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
+                        stet lorem sit clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum
+                        et lorem et sit.</span>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p>Clita erat ipsum et lorem et sit, sed stet lorem sit clita.</p>
+                    <div class="position-relative">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Your email">
+                        <button type="button"
+                            class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Our Services</h5>
+                    <a class="btn btn-link" href="">Currency Wallet</a>
+                    <a class="btn btn-link" href="">Currency Transaction</a>
+                    <a class="btn btn-link" href="">Bitcoin Investment</a>
+                    <a class="btn btn-link" href="">Token Sale</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Follow Us</h5>
+                    <div class="d-flex">
+                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a href="https://htmlcodex.com">HTML Codex</a> Distributed By <a
+                            href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
